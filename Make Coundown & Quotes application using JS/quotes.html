@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        *
+        {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            color: black;
+        }
+        body
+        {
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('img/motivational_quotes.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .slider-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            /* position: relative; */
+            position: absolute;
+            top: 20%;
+            left: 50%;
+        }
+        #slider-h1 {
+            /* width: 100%; */
+            color: black;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }   
+
+    </style>
+</head>
+<body>
+
+<div class="slider-container">
+   
+    <h1 id="slider-h1">
+    </h1>
+</div>
+
+<script>
+    let arr = [" “The only way to do great work is to love what you do.” ", "“In the middle of difficulty lies opportunity.” ", "“Success is not final, failure is not fatal: It is the courage to continue that counts.” ","“The only thing necessary for the triumph of evil is for good men to do nothing.” "];
+
+    let currentIndex = 0;
+    let slider = document.getElementById('slider-h1');
+
+    function next_slider() {
+        currentIndex++;
+        if (currentIndex >= arr.length) {
+            currentIndex = 0; // Loop back to the first image
+        }
+        slider.innerText= arr[currentIndex];
+    }
+    // Change Qu every 2 seconds
+    setInterval(next_slider, 1000);
+</script>
+
+</body>
+</html>

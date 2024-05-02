@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+    </h1>
+
+    <button onclick="call()">
+        Run Timer
+    </button>
+</body>
+</html>
+
+<script>
+
+    function call()
+    {
+        timer=10;
+        setInterval(()=>{
+        timer--
+        if(timer<0)
+        {
+            clearInterval(id)
+        }
+        let id = document.querySelector("h1").innerText=timer
+    },1000)
+    }
+</script>
