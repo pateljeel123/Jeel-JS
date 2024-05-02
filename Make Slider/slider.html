@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hlc3N8ZW58MHx8MHx8fDA%3D" alt="" height="600px" width="80%" style="margin-left: 150px; margin-top: 15px">
+</body>
+</html>
+
+<script>
+    let arr = ["https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hlc3N8ZW58MHx8MHx8fDA%3D","https://images.unsplash.com/photo-1588412079929-790b9f593d8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNoZXNzfGVufDB8fDB8fHww", ];
+
+    let currenttime=0
+
+    setInterval(() => {
+        currenttime=(currenttime+1)%arr.length
+        document.querySelector("img").src=arr[currenttime]
+    }, 2000);
+
+</script>
