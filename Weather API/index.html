@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cards-container">
+        <img src="https://reqres.in/img/faces/7-image.jpg" style="" alt="michael.lawson@reqres.in">
+        <h2 style="">email-michael.lawson@reqres.in</h2>
+        <h2>first-name=Michael</h2>
+        <h2>last_name=Lawson</h2>
+    </div>
+</body>
+</html>
+<script>
+    function fetchData() {
+        fetch("https://reqres.in/api/users?page=2")
+        .then((res) => res.json())
+        .then((data) => cardList(data.data)) 
+        .catch((err) => console.log(err));
+    }
+
+    fetchData();
+
+    function cardList(data) {
+        const store = data.map((el) => singleCard(el.email, el.first_name, el.last_name, el.avatar));
+        document.getElementById('cards-container').innerHTML=store.join('');
+    }
+
+    function singleCard(email, first_name, last_name, avatar) {
+        let card = `
+        <div>
+            <img src=${avatar} alt=${email} style="border-radius: 50%; "/>
+            <h2>${email}</h2>
+            <h2>${first_name}</h2>
+            <h2>${last_name}</h2>
+        </div>
+        `;
+        return card;
+    }
+</script>
