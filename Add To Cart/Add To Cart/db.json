@@ -1,0 +1,156 @@
+{
+    "pitches": [
+      {
+        "id": "1",
+        "title": "Beyond Snack Kerala Banana Chips",
+        "image": "https://m.media-amazon.com/images/I/819GDpbJp3L._AC_UL480_FMwebp_QL65_.jpg",
+        "founder": "Balaji Wapers",
+        "category": "Food",
+        "price": "220"
+      },
+      {
+        "id": "7",
+        "title": "auli Lifestyle",
+        "image": "https://m.media-amazon.com/images/I/51DUbOFXgHL._AC_UL480_FMwebp_QL65_.jpg",
+        "founder": "Aishwarya Mahajan",
+        "category": "Personal Care",
+        "price": "120"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/71Wa7-cOUqL._AC_UL480_FMwebp_QL65_.jpg",
+        "price": 19,
+        "percentage": 2.5,
+        "description": "Looking for Quirky shoes & clothes? Check out The Quirky Naari! Explore a range of LED shoes & Party wear sneakers that will make you stand out",
+        "founder": "Malvica Saxena",
+        "category": "Fashion",
+        "year": "14-08-2021",
+        "title": "Quirky Naari",
+        "id": "8"
+      },
+      {
+        "image": "https://static.wixstatic.com/media/5755f6_023c4baf970a43e4b187f7271a33fcad~mv2.png/v1/crop/x_237,y_352,w_1328,h_1331/fill/w_614,h_614,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/5755f6_023c4baf970a43e4b187f7271a33fcad~mv2.png",
+        "price": 54,
+        "percentage": 12,
+        "description": "Asia's first and only custom made electric kick scooter operator.World’s first in-premises electric vehicle hybrid-subscription fleet service.",
+        "founder": "Rutvij Dasadia ",
+        "category": "Education",
+        "year": "21-05-2021",
+        "title": "Booz scooters",
+        "id": "9"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/915WVrOntJL._AC_UL480_FMwebp_QL65_.jpg",
+        "price": 45,
+        "percentage": 25,
+        "description": "Get uniquely delicious and flavorful pickles and chutneys made by expert mom-chefs of Mithilanchal, Bihar. No Preservatives, No Additives, No Colors. Seasonal Fruits and Vegetables blended in locally sourced spices and mustard oil. ",
+        "founder": "Kalpana Jha ",
+        "category": "Food",
+        "year": "24-12-2018",
+        "title": "JhaJi Achaar",
+        "id": "10"
+      },
+      {
+        "image": "https://www.cocofit.in/images/Picture4_large.png",
+        "price": 25,
+        "percentage": 3.5,
+        "description": "We strive, respect and work hard every second taking our demigod to a new level with a delicious serving that would be a life changing experience.",
+        "founder": "Sashi Kanth V",
+        "category": "Food",
+        "year": "17-11-2017",
+        "title": "Cocofit",
+        "id": "11"
+      },
+      {
+        "image": "https://static.wixstatic.com/media/5f24cf_a17220104bb5486d943ad3acd5808e90~mv2.png/v1/fill/w_506,h_314,al_c,q_80,usm_0.66_1.00_0.01/5f24cf_a17220104bb5486d943ad3acd5808e90~mv2.png",
+        "price": 26,
+        "percentage": 2.56,
+        "description": "Falhari is India’s #1 fresh fruit products brand with an extensive range of delightful, made-to-order recipes of Salads, Juices, Smoothies, Lassis, Yoghurts, and more",
+        "founder": "Rahul Shankar Bhardwaj",
+        "category": "Food",
+        "year": "20-12-2021",
+        "title": "Falhari",
+        "id": "13"
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOkeAS5PgCBISOPRp_mZJuIxJ74IyCAlP_A&usqp=CAU",
+        "price": 50,
+        "percentage": 2,
+        "description": "We push our boundaries every day, we’re here to innovate and inspire a new generation of sustainable sanitation technology. PadCare isn’t a startup, it’s a revolution.",
+        "founder": "Ajinkya Dhariya",
+        "category": "Electronics",
+        "year": "07-09-2022",
+        "title": "Padcare Lab",
+        "id": "15"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/617QlJ62nFL._AC_UL480_FMwebp_QL65_.jpg",
+        "price": 57,
+        "percentage": 2,
+        "description": "aradyes is a semi-permanent hair color brand. She introduced the brand by identifying a gap in the market. Banking on her family business of dyes and intermediates, she teamed up with professionals and began R&D to formulate hair colors in their lab.",
+        "founder": "Yushika Jolly,",
+        "category": "Personal Care",
+        "year": "01-07-2021",
+        "title": "Paradyes",
+        "id": "16"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/610d1RfgHDL._AC_UL480_FMwebp_QL65_.jpg",
+        "price": 100,
+        "percentage": 1.5,
+        "description": "A small device that can be attached to any normal stethoscope and the stethoscope will become a digital one. Using this device it can reduce background noise, better audio, and visual clarity, and after all, one can get the live stream of data. ",
+        "founder": "Adarsha K",
+        "category": "Electronics",
+        "year": "12-22-2014",
+        "title": "AyuSynk",
+        "id": "17"
+      },
+      {
+        "image": "https://www.primebook.in/uploads/feature/1675677835_d887598e98a67da677f0.png",
+        "price": 75,
+        "percentage": 1.5,
+        "description": "Primebook 4G unites everything you need to elevate your learning. Meet the first Made In India 4G laptop, engineered with cutting-edge technology, based on the Android 11 Ecosystem, unlocking limitless learning opportunities.",
+        "founder": "Chitranshu Mahant",
+        "category": "Tech",
+        "title": "Primebook",
+        "year": "14-02-2020",
+        "id": "21"
+      },
+      {
+        "image": "https://m.media-amazon.com/images/I/61pq3ae629L._AC_UY327_FMwebp_QL65_.jpg",
+        "price": 45,
+        "percentage": 10,
+        "description": "HoloKitab is an edTech platform that enables book publishers and manufacturers from various industries to deliver Augmented Reality content to their users in a cost effective way.",
+        "founder": "Dipanshu Bajaj and Nikhil Miglani",
+        "category": "Education",
+        "year": "15-04-2020",
+        "title": "HoloKitab",
+        "id": "22"
+      },
+      {
+        "id": "b617",
+        "title": "iphone",
+        "image": "https://th.bing.com/th/id/OIP.BIcY1z00zpvYJhqYsNIt5gHaHa?w=187&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "category": "mobile",
+        "founder": "steve jobs",
+        "price": "150000"
+      },
+      {
+        "id": "6967",
+        "title": "lenovo ideapad 780",
+        "image": "https://th.bing.com/th/id/OIP.VcGB3NcIY2_uzdbVzt_mzgAAAA?w=299&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "founder": "carlous brathwate",
+        "category": "Electronics",
+        "price": "45000"
+      }
+    ],
+    "cart": [
+      {
+        "id": "05de",
+        "title": "Beyond Snack Kerala Banana Chips",
+        "image": "https://m.media-amazon.com/images/I/819GDpbJp3L._AC_UL480_FMwebp_QL65_.jpg",
+        "founder": "Balaji Wapers",
+        "price": "220",
+        "category": "Food"
+      }
+    ]
+  }

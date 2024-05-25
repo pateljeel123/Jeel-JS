@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Description Page</title>
+</head>
+
+<body>
+    
+    <h1>Cart page</h1>
+    <div class="container" style="text-align: center">
+        <img id="imaye" src="https://m.media-amazon.com/images/I/61pq3ae629L._AC_UY327_FMwebp_QL65_.jpg"
+            alt="Product Image" height="200" />
+        <h1 id="title">HoloKitab</h1>
+        <div class="data">
+            <label>Category:</label>
+            <p id="category">Education</p>
+        </div>
+        <div class="data">
+            <label>Price:</label>
+            <p id="price">$45</p>
+        </div>
+        <div class="data">
+            <label>Founder(s):</label>
+            <p id="founder">Dipanshu Bajaj and Nikhil Miglani</p>
+        </div>
+        <div class="data">
+            <label>Description:</label>
+            <p id="description">
+                HoloKitab is an edTech platform that enables book publishers and
+                manufacturers from various industries to deliver Augmented Reality
+                content to their users in a cost-effective way.
+            </p>
+        </div>
+        <div style="display: flex; justify-content: center" >
+            <button style="
+            border: 1ps solid white;
+            background-color: black;
+            color: teal;
+            padding: 5px;
+            cursor: pointer;
+          ">
+                ADD TO Cart
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    fetch("https://backend-0jlf.onrender.com/cart")
+        .then((res) => res.json())
+        .then((data) => makeCard(data));
+
+    function makeCard(data) {
+        let store = data.map((el) =>
+            singleCard(
+                el.image,
+                el.title,
+                el.category,
+                el.price,
+                el.founder,
+                el.description,
+                el.id
+            )
+        )
+        document.querySelector(".container").innerHTML = store;
+    }
+
+    function singleCard(image, title, category, price, founder, description,id) {
+        let card = `
+        <div style="margin: 1%;">
+            
+            <img id="imaye" src=${image} alt="Product Image" height="100%">
+            <h1 id="title">${title}</h1>
+            <div class="data">
+                <label>Category:</label>
+                <p id="category">${category}</p>
+                </div>
+                <div class="data">
+                    <label>Price:</label>
+                    <p id="price">$${price}</p>
+                    </div>
+                    <div class="data">
+                        <label>Founder(s):</label>
+                        <p id="founder">${founder}</p>
+                        </div>
+                        <div class="data">
+                            <label>Description:</label>
+                            <p id="description">${description}</p>
+                            </div>
+                            <div style="display:flex;justify-content: center;">
+                                <button style="border: 1ps solid white;background-color: black;color: teal;padding:5px;cursor: pointer;" class="DELETE" data-id=${id}>DELETE</button>
+                                </div>
+                        </div>
+        `;
+        return card;
+    }
+
+
+    document.addEventListener('click',(e)=>{
+        if(e.target.classList.contains('DELETE')){
+            DELETECard(e.target.dataset.id);
+        }
+    })
+
+    function DELETECard(id){
+        fetch(`https://backend-0jlf.onrender.com/cart/${id}`,{
+            method: 'DELETE',
+        }).then((res)=>res.json())
+        .then((data)=>alert('Product Deleted'))
+    }
+</script>
